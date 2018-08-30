@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">search_products</string>
+    <string name="main_menu_search_title">Encuentra tu producto</string>
+    <string name="main_menu_search_query_hint">¿Qué estás buscando?</string>
+</resources>

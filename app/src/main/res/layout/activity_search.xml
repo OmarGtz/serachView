@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchActivity">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/farmaciasBlueColor"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/main_menu_search_height"
+                android:layout_marginBottom="@dimen/activity_half_vertical_margin"
+                android:layout_marginLeft="@dimen/activity_half_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_half_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_half_vertical_margin"
+                android:background="@drawable/rectangle_with_rounded_corners">
+                <android.support.v7.widget.SearchView
+                    android:id="@+id/products_search_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_toLeftOf="@+id/product_scanner"
+                    app:suggestionRowLayout=""
+                    app:iconifiedByDefault="false"
+                    app:queryHint="@string/main_menu_search_query_hint"/>
+
+                <ImageView
+                    android:id="@+id/product_scanner"
+                    android:layout_width="@dimen/main_menu_search_camera_icon_size"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_marginRight="@dimen/main_menu_search_camera_margin"
+                    android:src="@drawable/ic_camera"/>
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
